@@ -21,3 +21,27 @@ img {
 .itemName{
   align-self: center;
 }
+
+#navBar {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  display: grid; 
+  grid-template-columns: repeat(2, 100px);
+}
+
+#cartHeader {
+  display: flex;
+  align-items: center;
+}
+
+#cartHeader div {
+  margin-left: 70%;
+  
+}
+
+#cartHeader h1 {
+  margin: 32px;
+}
