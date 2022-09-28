@@ -13,7 +13,7 @@ const ShoppingCart = () => {
         <div>
             <div id="cartHeader">
                 <h1>Shopping Cart</h1>
-                <div>Items In Cart: {itemsNum}</div>
+                <div data-testid='x'>Items In Cart: {itemsNum}</div>
             </div>
             <ItemManager incrementItems={incrementItems}/>
         </div>    
