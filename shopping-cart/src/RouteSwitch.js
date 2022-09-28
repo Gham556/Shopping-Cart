@@ -1,7 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 import App from './App';
-import ShoppingCart from './components/shoppingCart.js'
+import ShoppingCart from './components/shoppingCart.js'; 
+import './index.css'
+
+
 const RouteSwitch = () => {
     return (
             <BrowserRouter>

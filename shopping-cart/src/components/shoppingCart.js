@@ -1,18 +1,22 @@
 import React, { useState } from "react";
+import ItemManager from './itemManager'
 
 const ShoppingCart = () => {
     const [ itemsNum, setItemsNum ] = useState(0);
 
-    const incrementItems = () => {
-        setItemsNum(itemsNum + 1);
+    const incrementItems = (e) => {
+        e.preventDefault();
+        setItemsNum(itemsNum + Number(e.target[0].value)); 
     }
 
     return (
         <div>
-            <h1>Shopping Cart</h1>
-            <div>Items In Cart: {itemsNum}</div>
-            <button type='button' onClick={incrementItems}>Increment</button>
-        </div>
+            <div>
+                <h1>Shopping Cart</h1>
+                <div>Items In Cart: {itemsNum}</div>
+            </div>
+            <ItemManager incrementItems={incrementItems}/>
+        </div>    
     )
 }; 
 
